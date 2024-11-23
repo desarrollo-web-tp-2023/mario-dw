@@ -1,4 +1,4 @@
-let title = "Super Mario Phaser";
+let title = "Super Mario Web";
 let index = 0;
 let direction = 1;
 
