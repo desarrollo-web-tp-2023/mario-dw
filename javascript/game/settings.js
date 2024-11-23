@@ -49,7 +49,7 @@ function drawSettingsMenu() {
     settingsXbutton.depth = 5;
     this.settingsMenuObjects.add(settingsXbutton);
 
-    let settingsText = this.add.text(screenWidth / 6, screenHeight - (screenHeight* 0.85), 'Settings', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 45), align: 'center'});
+    let settingsText = this.add.text(screenWidth / 6, screenHeight - (screenHeight* 0.85), 'Configuración', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 45), align: 'center'});
     settingsText.depth = 5;
     this.settingsMenuObjects.add(settingsText);
 
@@ -65,7 +65,7 @@ function drawSettingsMenu() {
         localStorage.setItem('music-enabled', musicCheckbox.checked)
     });
 
-    let musicCheckboxText = this.add.text(screenWidth / 8, screenHeight / 2.9, 'Music', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 55), align: 'center'}).setOrigin(0.5, 0).setInteractive().on('pointerdown', () => musicCheckbox.toggleChecked());;
+    let musicCheckboxText = this.add.text(screenWidth / 8, screenHeight / 2.9, 'Música', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 55), align: 'center'}).setOrigin(0.5, 0).setInteractive().on('pointerdown', () => musicCheckbox.toggleChecked());;
     musicCheckboxText.setOrigin(0, 0.4).depth = 5;
     this.settingsMenuObjects.add(musicCheckboxText);
 
@@ -81,7 +81,7 @@ function drawSettingsMenu() {
         localStorage.setItem('effects-enabled', effectsCheckbox.checked)
     });
 
-    let effectsCheckboxText = this.add.text(screenWidth / 8, screenHeight / 2.3, 'Effects', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 55), align: 'center'}).setOrigin(0.5, 0).setInteractive().on('pointerdown', () => effectsCheckbox.toggleChecked());
+    let effectsCheckboxText = this.add.text(screenWidth / 8, screenHeight / 2.3, 'Efectos', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 55), align: 'center'}).setOrigin(0.5, 0).setInteractive().on('pointerdown', () => effectsCheckbox.toggleChecked());
     effectsCheckboxText.setOrigin(0, 0.4).depth = 5;
     this.settingsMenuObjects.add(effectsCheckboxText);
 
@@ -105,7 +105,7 @@ function drawSettingsMenu() {
     sliderBar.lineStyle(5, 0x373737, 1).strokePoints(sliderDot.slider.endPoints).depth = 4;
     this.settingsMenuObjects.add(sliderBar);
 
-    let sliderDotText = this.add.text(screenWidth / 5.15, screenHeight / 1.85, 'General volume', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 60), align: 'center'}).setOrigin(0.5, 0);
+    let sliderDotText = this.add.text(screenWidth / 5.15, screenHeight / 1.85, 'Volumen', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 60), align: 'center'}).setOrigin(0.5, 0);
     sliderDotText.depth = 5;
     this.settingsMenuObjects.add(sliderDotText);
 
@@ -135,7 +135,7 @@ function drawSettingsMenu() {
 
     //> Controls
 
-    let controlsText = this.add.text(screenWidth / 1.5, screenHeight - (screenHeight* 0.85), 'Controls', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 45), align: 'center'});
+    let controlsText = this.add.text(screenWidth / 1.5, screenHeight - (screenHeight* 0.85), 'Controles', { fontFamily: 'pixel_nums', fontSize: (screenWidth / 45), align: 'center'});
     controlsText.depth = 5;
     this.settingsMenuObjects.add(controlsText);
 
@@ -149,7 +149,7 @@ function drawSettingsMenu() {
         18: 'ALT',
         20: 'CAPS',
         27: 'ESCAPE',
-        32: 'SPACE',
+        32: 'BARRA ESPACIO',
         33: 'PAGE UP',
         34: 'PAGE DOWN',
         35: 'END',

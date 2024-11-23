@@ -16,7 +16,7 @@ function updateTitle() {
     index += direction;
   }
 
-  document.title = '🗿 - ' + title.substring(0, index);
+  document.title = title.substring(0, index);
 
   if (index >= title.length || index <= 0) {
     direction *= -1;

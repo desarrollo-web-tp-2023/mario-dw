@@ -138,7 +138,7 @@ function preload() {
     percentText.setOrigin(0.5, 0.5);
     
     this.load.on('progress', function (value) {
-        percentText.setText(value * 99 >= 99 ? 'Generating world...' : 'Loading... ' + parseInt(value * 99) + '%');
+        percentText.setText(value * 99 >= 99 ? 'Preparando el examen...' : 'Cargando... ' + parseInt(value * 99) + '%');
         progressBar.clear();
         progressBar.fillStyle(0xffffff, 1);
         progressBar.fillRoundedRect(screenWidth / 2.45, screenHeight / 2 * 1.07, screenWidth / 5.6 * value, screenHeight / 34.5, 5);
